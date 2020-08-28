@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.intro{
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: left;
+    color: #000;
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 200px;
+    font-size: 25px;
+}
+
+.intro span.border{
+    background-color: #212121;
+    opacity: 0.8;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.image1{
+    background-image: url(./img/backgroundimg.jpg);
+    min-height: 1050px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+/* .image2{
+    background-image: url(img/DSC08115.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.secondimg{
+    position: absolute;
+    left: 0;
+    top: 1900px;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+}
+
+.secondimg span.border2{
+    background-color: #212121;
+    opacity: 0.8;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+} */
+
+
+#navdiv ul{
+    width: 100%;
+    height: 60px;
+    background: white;
+    line-height: 60px;
+    color: white;
+    opacity: 0.9;
+}
+
+#navdiv ul a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+}
+
+#navdiv ul li{
+    list-style-type: none;
+    /* display: inline-block; */
+    float: right;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+/* #navdiv ul li:hover{
+    background-color: #BDBDBD;
+    transition: all 0.50s;
+} */
+
+
+#navdiv h2{
+    width: 100px;
+    float: left;
+    cursor: pointer;
+    margin-left: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nameHeader{
+    padding-left: 400px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+li{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* h2{
+ text-align: center;
+    font-size: 25px;
+    color: white;
+} */
+
+#block{
+    margin-right: 80px;
+    /* padding-right: 80px; */
+    /* padding-left: 200px; */
+    margin-right: 450px;
+    padding-top: 5px;
+}
+
+#openning{
+    font-family: 'Quicksand', sans-serif;
+}
+
+P{
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+#socialMediaIcons{
+    position: absolute;
+    top: 45%;
+    left: 95%;
+    /* padding-left: 800px; */
+}

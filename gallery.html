@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Project</title>
+    <link rel="stylesheet" type="text/css" href="CSS/gallery.css">
+    <link rel="stylesheet" href="CSS/simplelightbox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+  
+<body>
+    <!--Navigation Bar-->
+    <div id="header">
+        <div id="navdiv">
+        <ul id="navBar">
+            <h2 class="nameHeader"><a href="index.html">RadientHorizonz</a></h2>
+            <div id="block">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            </div>
+        </ul>
+        </div>
+    </div>
+
+<!--Content Begins Here-->
+<div class="container">
+    <h1 class="align-center">Gallery of ArtWork</h1>
+    <div class="jquery-script-ads" align="center" style="margin:30px auto;">
+        <script type="text/javascript" async="" src="http://www.google- analytics.com/ga.js"></script>
+    </div>
+    
+<!--This is how you add photos to the gallery-->
+    <div class="gallery">
+        <a href="CSS/img/images/image1.jpg" class="big">
+            <img src="CSS/img/images/thumbs/thumb1.jpg" alt="" title="Image 1">
+        </a>
+        <a href="CSS/img/images/image2.jpg" class="big">
+            <img src="CSS/img/images/thumbs/thumb2.jpg" alt="" title="Image 2">
+        </a>
+        <a href="CSS/img/images/image3.jpg" class="big">
+            <img src="CSS/img/images/thumbs/thumb3.jpg" alt="" title="Image 3">
+        </a>
+        <a href="CSS/img/images/image4.jpg" class="big">
+            <img src="CSS/img/images/thumbs/thumb4.jpg" alt="" title="Image 4">
+        </a>
+        <div class="clear"></div>
+        <a href="CSS/img/images/image5.jpg" class="big">
+            <img src="CSS/img/images/thumbs/thumb5.jpg" alt="" title="Image 5">
+        </a>
+        <a href="CSS/img/images/image6.jpg" class="big">
+            <img src="CSS/img/images/thumbs/thumb6.jpg" alt="" title="Image 6">
+        </a>
+        <a href="CSS/img/images/image7.jpg" class="big">
+            <img src="CSS/img/images/thumbs/thumb7.jpg" alt="" title="Image 7">
+        </a>
+        <a href="CSS/img/images/image8.jpg" class="big">
+            <img src="CSS/img/images/thumbs/thumb8.jpg" alt="" title="Image 8">
+        </a>
+        <div class="clear"></div>
+        <a href="CSS/img/images/image9.jpg" class="big">
+            <img src="CSS/img/images/thumbs/thumb9.jpg" alt="" title="Image 9">
+        </a>
+        <a href="CSS/img/images/image10.jpg" class="big">
+            <img src="CSS/img/images/thumbs/thumb10.jpg" alt="" title="Image 10">
+        </a>
+        <a href="CSS/img/images/image11.jpg" class="big">
+            <img src="CSS/img/images/thumbs/thumb11.jpg" alt="" title="Image 11">
+        </a>
+        <a href="CSS/img/images/image12.jpg" class="big">
+            <img src="CSS/img/images/thumbs/thumb12.jpg" alt="" title="Image 12">
+        </a>
+        <div class="clear"></div>
+    </div>
+</div> 
+    
+    
+<!--Script that allows the jquery gallery to work-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="JavaScript/simple-lightbox.js"></script>
+<script>
+	$(function(){
+		var $gallery = $('.gallery a').simpleLightbox();
+		
+		$gallery.on('show.simplelightbox', function(){
+			console.log('Requested for showing');
+		})
+		.on('shown.simplelightbox', function(){
+			console.log('Shown');
+		})
+		.on('close.simplelightbox', function(){
+			console.log('Requested for closing');
+		})
+		.on('closed.simplelightbox', function(){
+			console.log('Closed');
+		})
+		.on('change.simplelightbox', function(){
+			console.log('Requested for change');
+		})
+		.on('next.simplelightbox', function(){
+			console.log('Requested for next');
+		})
+		.on('prev.simplelightbox', function(){
+			console.log('Requested for prev');
+		})
+		.on('nextImageLoaded.simplelightbox', function(){
+			console.log('Next image loaded');
+		})
+		.on('prevImageLoaded.simplelightbox', function(){
+			console.log('Prev image loaded');
+		})
+		.on('changed.simplelightbox', function(){
+			console.log('Image changed');
+		})
+		.on('nextDone.simplelightbox', function(){
+			console.log('Image changed to next');
+		})
+		.on('prevDone.simplelightbox', function(){
+			console.log('Image changed to prev');
+		})
+		.on('error.simplelightbox', function(e){
+			console.log('No image found, go to the next/prev');
+			console.log(e);
+		});
+	});
+</script>
+   
+</body>
+</html>
